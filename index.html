@@ -8,26 +8,127 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- jQuery CDN-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 
 <body>
 
-    <div id="top">
-        <table cellspacing="20" id="header">
-            <tr>
-                <td><img src="images/profile.png" alt="Profile Picture" height="200px"></td>
-                <td>
-                    <div class="container">
-                        <h1>Lakshika Madhuranga</h1>
-                    <p><em>Founder and CEO of <strong>Nothing.</strong></em></p>
-                    <p>I'm a digital artist and a software enginnering student.</p>
-                    </div>
-                    
-                </td>
-            </tr>
-        </table>
+    <div class="container">
+        <div id="top">
+            <img src="images/profile.png" alt="Profile Picture" height="200px" style="margin: 2rem;">
+            <div>
+                <h1 class="header">Lakshika Madhuranga</h1>
+                <hr>
+                <br>
+                <p class="bio-one">
+                    <em>Founder and CEO of <strong>Artify Pixels.</strong></em>
+                </p>
+                <br>
+                <p class="bio-two">
+                    I'm a digital artist and a software engineering student.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+
+    <style>
+        ul.submenu {
+            background-color: #212121;
+            border-radius: 5px;
+            display: inline-block;
+            padding: 4px 10px;
+            margin: 0;
+            overflow: hidden;
+            border: 0.1rem solid whitesmoke;
+
+        }
+
+        ul.submenu li {
+            display: inline-block;
+
+        }
+
+        ul.submenu li a i.fa {
+            padding-bottom: 1rem;
+            display: inline-block;
+            border: 1px solid transparent;
+            color: #ccc;
+            height: 30px;
+            width: 30px;
+            border-radius: 50px;
+            margin: 10px;
+            text-align: center;
+            line-height: 30px;
+            position: relative;
+            z-index: 2;
+
+        }
+
+        ul.submenu li a i.fa::after {
+            content: "";
+            height: 0%;
+            width: 0%;
+            position: absolute;
+            top: -500%;
+            bottom: -500%;
+            left: -500%;
+            right: -500%;
+            margin: auto;
+            border: 0px solid transparent;
+            border-radius: 200px;
+            opacity: 0;
+            z-index: -1;
+            transition: all ease 0.5s;
+        }
+
+        ul.submenu li a:hover i.fa::before {
+            color: #fff;
+        }
+
+        ul.submenu li a:hover i.fa-facebook::after {
+            height: 200%;
+            width: 200%;
+            background-color: #3b5998;
+            border-radius: 0px;
+            opacity: 1;
+        }
+
+        ul.submenu li a:hover i.fa-twitter::after {
+            height: 200%;
+            width: 200%;
+            background-color: #1dcaff;
+            border-radius: 0px;
+            opacity: 1;
+        }
+
+        ul.submenu li a:hover i.fa-github::after {
+            height: 200%;
+            width: 200%;
+            background-color: #5a5555;
+            border-radius: 0px;
+            opacity: 1;
+        }
+
+        ul.submenu li a:hover i.fa-instagram::after {
+            height: 200%;
+            width: 200%;
+            background-image: linear-gradient(135deg, #405DE6 0%, #5851DB 29%, #833AB4 67%, #C13584 100%);
+            border-radius: 0px;
+            opacity: 1;
+        }
+    </style>
+    <div class="icon-container">
+        <ul class="submenu">
+            <li><a href="https://www.facebook.com/izlaki/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/mrlakix"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/mr_laki__/"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://github.com/LakiDIV"><i class="fa fa-github"></i></a></li>
+        </ul>
+    </div>
     </div>
 
     <hr class="doted">
@@ -159,7 +260,9 @@
         }
     </style>
 
-
+    <br>
+    <hr>
+    <br><br>
     <h1>My <span>timeline</span></h1>
 
     <div class="timeline-container">
@@ -169,7 +272,9 @@
             <div class="timeline-content">
                 <h3>👶🏽</h3>
                 <span>2000 AD</span>
-                <p>In the mystical lands of Sri Lanka, amidst the tapestry of vibrant culture, a radiant soul named <q>Lakshika Madhuranga</q> came into existence. </p>
+                <p>In the mystical lands of Sri Lanka, amidst the tapestry of vibrant culture, a radiant soul named
+                    <q>Lakshika Madhuranga</q> came into existence.
+                </p>
             </div>
         </div>
 
@@ -196,7 +301,8 @@
                 <span>Diploma in Multimedia</span>
                 <p>Wijaya Graphics</p>
                 <span>Started Freelancing on Fiverr</span>
-                <p>With the understanding of Graphic Designing, I have started doing freelancing as a side hobby to gain some experience in the industry</p>
+                <p>With the understanding of Graphic Designing, I have started doing freelancing as a side hobby to gain
+                    some experience in the industry</p>
             </div>
         </div>
         <div class="timeline-block timeline-block-right">
@@ -236,6 +342,55 @@
 
     <hr>
 
+    
+    <style>
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button {
+            width: 12rem;
+            height: 3.4rem;
+            background-color: #e7db2d;
+            border-radius: 4rem;
+            transition: 1s;
+            color: #212121;
+            font-weight: 800;
+            box-shadow: 0 1px 1px rgba(255, 251, 251, 0.925);
+            margin-right: 1rem;
+        }
+
+
+        .button:hover {
+            width: 12rem;
+            height: 3.4rem;
+            background-color: #df9a4b;
+            border-radius: 4rem;
+        }
+
+        .button p {
+            position: relative;
+            text-align: center;
+            padding-top: 1rem;
+        }
+    </style>
+
+
+
+    <br>
+
+    <br>
+    <div class="button-container">
+        <div class="button">
+            <p>HIRE</p>
+        </div>
+        <div class="button">
+            <p>CONTACT</p>
+        </div>
+    </div><br><br>
+    <hr>
     <br><br>
 
     <link rel="stylesheet" href="css/skills.css">
@@ -333,57 +488,57 @@
             </li>
         </ul>
     </div>
-    
+
 
 
 
     <script>
-        ;( function( $ ) {
-	"use strict";
-	
-	var $bars = $( ".bar" ),
-		methods = {
-			init: function() {
-				
-				// Bind events
-				methods.bindEvents();
-				
-			},
-			bindEvents: function() {
+        ; (function ($) {
+            "use strict";
 
-				// Loop through each of the bars...
-				$bars.each( function() {
+            var $bars = $(".bar"),
+                methods = {
+                    init: function () {
 
-					var $bar = $( this ),
-						$pct = $bar.find( ".pct" ),
-						data = $bar.data( "bar" );
+                        // Bind events
+                        methods.bindEvents();
 
-					setTimeout( function() {
+                    },
+                    bindEvents: function () {
 
-						$bar
-							.css( "background-color", data.color )
-							.animate({
-								"width": $pct.html()
-							}, data.speed || 3000, function() {
+                        // Loop through each of the bars...
+                        $bars.each(function () {
 
-								$pct.css({
-									"color": data.color,
-									"opacity": 1
-								});
+                            var $bar = $(this),
+                                $pct = $bar.find(".pct"),
+                                data = $bar.data("bar");
 
-							});
+                            setTimeout(function () {
 
-					}, data.delay || 0 );			
+                                $bar
+                                    .css("background-color", data.color)
+                                    .animate({
+                                        "width": $pct.html()
+                                    }, data.speed || 3000, function () {
 
-				});
+                                        $pct.css({
+                                            "color": data.color,
+                                            "opacity": 1
+                                        });
 
-			}
-		};
-	
-	// Initialize on page load
-	methods.init();	
-		
-})( jQuery );
+                                    });
+
+                            }, data.delay || 0);
+
+                        });
+
+                    }
+                };
+
+            // Initialize on page load
+            methods.init();
+
+        })(jQuery);
     </script>
 
     <h3>Hobbies</h3>

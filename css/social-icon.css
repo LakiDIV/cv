@@ -1,0 +1,123 @@
+.footer {
+    display: ruby;
+    background-color: #303030;
+    z-index: 7;
+    width: 100%;
+    height: 20rem;
+    position: relative;
+    bottom: 0;
+    border-radius: 1rem;
+    margin: 1rem auto 1rem auto;
+}
+
+.submenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    bottom: 0;
+    margin-right: 6rem;
+}
+
+.icon-container {
+    border-radius: 0.4rem;
+}
+
+ul.submenu {
+    width: 20rem;
+    align-items: center;
+    margin: 4rem auto;
+    background-color: #212121;
+    border-radius: 5px;
+    display: inline-block;
+
+    overflow: hidden;
+    border: 0.1rem solid rgba(211, 211, 211, 0.623);
+
+}
+
+ul.submenu li {
+    display: inline-block;
+
+}
+
+ul.submenu li a i.fa {
+   
+    display: inline-block;
+    border: 1px solid transparent;
+    color: #ccc;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    margin: 10px;
+    line-height: 30px;
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    border: 0.1rem solid rgba(207, 207, 207, 0.055);
+}
+
+ul.submenu li a i.fa::after {
+    content: "";
+    height: 0%;
+    width: 0%;
+    position: absolute;
+    top: -500%;
+    bottom: -500%;
+    left: -500%;
+    right: -500%;
+    margin: auto;
+    border: 0px solid transparent;
+    border-radius: 200px;
+    opacity: 0;
+    z-index: -1;
+    transition: all ease 0.5s;
+    
+}
+
+ul.submenu li a:hover i.fa::before {
+    color: #fff;
+}
+
+ul.submenu li a:hover i.fa-facebook::after {
+    height: 100%;
+    width: 100%;
+    background-color: #3b5998;
+    border-radius: 0px;
+    opacity: 1;
+}
+
+ul.submenu li a:hover i.fa-twitter::after {
+    height: 100%;
+    width: 100%;
+    background-color: #1dcaff;
+    border-radius: 0px;
+    opacity: 1;
+}
+
+ul.submenu li a:hover i.fa-github::after {
+    height: 100%;
+    width: 100%;
+    background-color: #5a5555;
+    border-radius: 0px;
+    opacity: 1;
+}
+
+ul.submenu li a:hover i.fa-instagram::after {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(135deg, #405DE6 0%, #5851DB 29%, #833AB4 67%, #C13584 100%);
+    border-radius: 0px;
+    opacity: 1;
+}
+
+.copywrite-text {
+
+    color: #8b8b8b;
+    text-align: center;
+    margin: 5rem;
+}

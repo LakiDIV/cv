@@ -13,14 +13,18 @@
 </head>
 
 <body>
+
     <div id="top">
         <table cellspacing="20" id="header">
             <tr>
                 <td><img src="images/profile.png" alt="Profile Picture" height="200px"></td>
                 <td>
-                    <h1>Lakshika Madhuranga</h1>
+                    <div class="container">
+                        <h1>Lakshika Madhuranga</h1>
                     <p><em>Founder and CEO of <strong>Nothing.</strong></em></p>
                     <p>I'm a digital artist and a software enginnering student.</p>
+                    </div>
+                    
                 </td>
             </tr>
         </table>
@@ -53,7 +57,7 @@
             font-weight: 600;
         }
 
-        .container {
+        .timeline-container {
             width: 80%;
             padding: 50px 0;
             margin: 50px auto;
@@ -61,7 +65,7 @@
             overflow: hidden;
         }
 
-        .container:before {
+        .timeline-container:before {
             content: '';
             position: absolute;
             top: 0;
@@ -134,7 +138,7 @@
 
 
         @media screen and (max-width: 768px) {
-            .container:before {
+            .timeline-container:before {
                 left: 8px;
                 width: 2px;
             }
@@ -158,7 +162,7 @@
 
     <h1>My <span>timeline</span></h1>
 
-    <div class="container">
+    <div class="timeline-container">
 
         <div class="timeline-block timeline-block-right">
             <div class="marker"></div>

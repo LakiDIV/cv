@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,11 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <div id="top">
         <table cellspacing="20" id="header">
-            <tr >
+            <tr>
                 <td><img src="images/profile.png" alt="Profile Picture" height="200px"></td>
                 <td>
                     <h1>Lakshika Madhuranga</h1>
@@ -20,27 +22,210 @@
             </tr>
         </table>
     </div>
-    
+
     <hr class="doted">
-    <h3>Work Experience</h3>
-    <table cellspacing="5" border="1">
-        <thead>
-            <tr>
-                <th>Year</th>
-                <th>Work</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>2020-2022</td>
-                <td>Freelance Graphic Artist</td>
-            </tr>
-            <tr>
-                <td>2023</td>
-                <td>Intern Software Engineer</td>
-            </tr>
-        </tbody>
-    </table>
+
+    <style>
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px 0;
+            font-family: 'Roboto', sans-serif;
+            background: #F1F2F6;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: 300;
+            color: #777
+        }
+
+        h1 span {
+            font-weight: 600;
+        }
+
+        .container {
+            width: 80%;
+            padding: 50px 0;
+            margin: 50px auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            margin-left: -1px;
+            width: 2px;
+            height: 100%;
+            background: #CCD1D9;
+            z-index: 1
+        }
+
+        .timeline-block {
+            width: -webkit-calc(50% + 8px);
+            width: -moz-calc(50% + 8px);
+            width: calc(50% + 8px);
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: flex;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            -moz-box-pack: justify;
+            justify-content: space-between;
+            clear: both;
+        }
+
+        .timeline-block-right {
+            float: right;
+        }
+
+        .timeline-block-left {
+            float: left;
+            direction: rtl
+        }
+
+        .marker {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            border: 2px solid #F5F7FA;
+            background: #4FC1E9;
+            margin-top: 10px;
+            z-index: 9999
+        }
+
+        .timeline-content {
+            width: 95%;
+            padding: 0 15px;
+            color: #666
+        }
+
+        .timeline-content h3 {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-size: 25px;
+            font-weight: 500
+        }
+
+        .timeline-content span {
+            font-size: 15px;
+            color: #a4a4a4;
+        }
+
+        .timeline-content p {
+            font-size: 14px;
+            line-height: 1.5em;
+            word-spacing: 1px;
+            color: #888;
+        }
+
+
+        @media screen and (max-width: 768px) {
+            .container:before {
+                left: 8px;
+                width: 2px;
+            }
+
+            .timeline-block {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+
+            .timeline-block-right {
+                float: none;
+            }
+
+            .timeline-block-left {
+                float: none;
+                direction: ltr;
+            }
+        }
+    </style>
+
+
+    <h1>My <span>timeline</span></h1>
+
+    <div class="container">
+
+        <div class="timeline-block timeline-block-right">
+            <div class="marker"></div>
+            <div class="timeline-content">
+                <h3>👶🏽</h3>
+                <span>2000 AD</span>
+                <p>In the mystical lands of Sri Lanka, amidst the tapestry of vibrant culture, a radiant soul named <q>Lakshika Madhuranga</q> came into existence. </p>
+            </div>
+        </div>
+
+        <div class="timeline-block timeline-block-left">
+            <div class="marker"></div>
+            <div class="timeline-content">
+                <h3>2016</h3>
+                <span>G.C.E O/L</span>
+            </div>
+        </div>
+
+        <div class="timeline-block timeline-block-right">
+            <div class="marker"></div>
+            <div class="timeline-content">
+                <h3>2019</h3>
+                <span>G.C.E A/L</span>
+            </div>
+        </div>
+
+        <div class="timeline-block timeline-block-left">
+            <div class="marker"></div>
+            <div class="timeline-content">
+                <h3>2020</h3>
+                <span>Diploma in Multimedia</span>
+                <p>Wijaya Graphics</p>
+                <span>Started Freelancing on Fiverr</span>
+                <p>With the understanding of Graphic Designing, I have started doing freelancing as a side hobby to gain some experience in the industry</p>
+            </div>
+        </div>
+        <div class="timeline-block timeline-block-right">
+            <div class="marker"></div>
+            <div class="timeline-content">
+                <h3>2021</h3>
+                <span>Diploma in Computer System Designing</span>
+                <p>at NIBM</p>
+            </div>
+        </div>
+        <div class="timeline-block timeline-block-left">
+            <div class="marker"></div>
+            <div class="timeline-content">
+                <h3>2021 December</h3>
+                <span>Graphic Artist</span>
+                <p>at Just Natural by Rod - Australia</p>
+            </div>
+        </div>
+        <div class="timeline-block timeline-block-right">
+            <div class="marker"></div>
+            <div class="timeline-content">
+                <h3>2022</h3>
+                <span>Diploma in Computer System Designing</span>
+                <p>at NIBM</p>
+            </div>
+        </div>
+        <div class="timeline-block timeline-block-left">
+            <div class="marker"></div>
+            <div class="timeline-content">
+                <h3>Late 2022</h3>
+                <span>CS50P - Introduction to Python</span>
+                <p>at Harverd University</p>
+            </div>
+        </div>
+    </div>
+
     <h3>Skills</h3>
     <table cellspacing="20">
         <tr>
@@ -63,11 +248,14 @@
     <h3>Hobbies</h3>
     <h3>Favourite Books</h3>
     <div class="bookrack">
-        <img class="bookcover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXiCLaXo-haziow4z37tTCzYgsOZ2Bc2kJfRoedHtDO5l93LMo" alt="">
+        <img class="bookcover"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXiCLaXo-haziow4z37tTCzYgsOZ2Bc2kJfRoedHtDO5l93LMo"
+            alt="">
         <img class="bookcover" src="https://store.goodreads.lk/wp-content/uploads/2021/10/9780062641540.jpg" alt="">
     </div>
     <p>Test <br> Test <br></p>
     <hr>
     <a href="contact.html">Contact</a>
 </body>
+
 </html>

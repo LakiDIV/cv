@@ -12,16 +12,30 @@
 
     <!-- jQuery CDN-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+
+
+
 </head>
 
 <body>
 
     <div class="container">
         <div id="top">
-            <img src="images/profile.png" alt="Profile Picture" height="200px" style="margin: 2rem;">
+            <img  class="img-container" src="images/profile.png" alt="Profile Picture" height="200px"
+                style="
+                margin: 1rem; 
+                box-shadow: 8 6px 2px rgba(0, 2, 1, 0.918); 
+                z-index: 10; 
+                padding-right: 2rem;">
             <div>
-                <h1 class="header">Lakshika Madhuranga</h1>
+                <br><br>
+                <h1 class="header">
+                    Lakshika Madhuranga
+                    <br><br>
+                </h1>  
                 <hr>
+
                 <br>
                 <p class="bio-one">
                     <em>Founder and CEO of <strong>Artify Pixels.</strong></em>
@@ -33,106 +47,74 @@
             </div>
         </div>
     </div>
-    
-
     <style>
-        ul.submenu {
-            background-color: #212121;
-            border-radius: 5px;
-            display: inline-block;
-            padding: 4px 10px;
-            margin: 0;
-            overflow: hidden;
-            border: 0.1rem solid whitesmoke;
-
-        }
-
-        ul.submenu li {
-            display: inline-block;
-
-        }
-
-        ul.submenu li a i.fa {
-            padding-bottom: 1rem;
-            display: inline-block;
-            border: 1px solid transparent;
-            color: #ccc;
-            height: 30px;
-            width: 30px;
-            border-radius: 50px;
-            margin: 10px;
-            text-align: center;
-            line-height: 30px;
-            position: relative;
-            z-index: 2;
-
-        }
-
-        ul.submenu li a i.fa::after {
-            content: "";
-            height: 0%;
-            width: 0%;
-            position: absolute;
-            top: -500%;
-            bottom: -500%;
-            left: -500%;
-            right: -500%;
-            margin: auto;
-            border: 0px solid transparent;
-            border-radius: 200px;
-            opacity: 0;
-            z-index: -1;
-            transition: all ease 0.5s;
-        }
-
-        ul.submenu li a:hover i.fa::before {
-            color: #fff;
-        }
-
-        ul.submenu li a:hover i.fa-facebook::after {
-            height: 200%;
-            width: 200%;
-            background-color: #3b5998;
-            border-radius: 0px;
-            opacity: 1;
-        }
-
-        ul.submenu li a:hover i.fa-twitter::after {
-            height: 200%;
-            width: 200%;
-            background-color: #1dcaff;
-            border-radius: 0px;
-            opacity: 1;
-        }
-
-        ul.submenu li a:hover i.fa-github::after {
-            height: 200%;
-            width: 200%;
-            background-color: #5a5555;
-            border-radius: 0px;
-            opacity: 1;
-        }
-
-        ul.submenu li a:hover i.fa-instagram::after {
-            height: 200%;
-            width: 200%;
-            background-image: linear-gradient(135deg, #405DE6 0%, #5851DB 29%, #833AB4 67%, #C13584 100%);
-            border-radius: 0px;
-            opacity: 1;
-        }
+    body {
+        font-family: Arial, sans-serif;
+      }
+  
+      .navbar-container {
+        display: flex;
+        justify-content: center;
+        font-weight: 600;
+        transition: 1s;
+      }
+  
+      .navbar {
+        background-color: #ebf0f5;
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        border-radius: 1rem;
+        max-width: 100rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+  
+      .navbar-nav {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+      }
+  
+      .nav-item {
+        margin: 0;
+      }
+  
+      .nav-link {
+        display: block;
+        padding: 0.8rem;
+        color: #363636;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+  
+      .nav-link:hover {
+        color: #19695e;
+      }
+      .nav-link:hover {
+        text-decoration: underline;
+      }
     </style>
-    <div class="icon-container">
-        <ul class="submenu">
-            <li><a href="https://www.facebook.com/izlaki/"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="https://twitter.com/mrlakix"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="https://www.instagram.com/mr_laki__/"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="https://github.com/LakiDIV"><i class="fa fa-github"></i></a></li>
+  </head>
+  <body>
+    <div class="navbar-container">
+      <nav class="navbar" data-bs-theme="dark">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/calendar">PROJECTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">BLOGS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/profile">CONTACT</a>
+          </li>
         </ul>
+      </nav>
     </div>
-    </div>
-
-    <hr class="doted">
-
     <style>
         * {
             -webkit-box-sizing: border-box;
@@ -141,12 +123,6 @@
             outline: none;
         }
 
-        body {
-            margin: 0;
-            padding: 30px 0;
-            font-family: 'Roboto', sans-serif;
-            background: #F1F2F6;
-        }
 
         h1 {
             text-align: center;
@@ -261,7 +237,6 @@
     </style>
 
     <br>
-    <hr>
     <br><br>
     <h1>My <span>timeline</span></h1>
 
@@ -342,7 +317,7 @@
 
     <hr>
 
-    
+
     <style>
         .button-container {
             display: flex;

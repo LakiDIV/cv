@@ -540,47 +540,47 @@
         <link rel="stylesheet" href="css/skills.css">
 
         <style>
-
             .parent-element {
                 max-width: 60rem;
                 margin: 0 auto;
             }
-.grid-container {
-    width: 100%;
-    display: grid;
-    grid-gap: 1rem;
-    
-    
-    min-height: 10rem;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, 2fr);
 
-    position:relative;
-    align-self: center;
-    margin: 0 auto;
-    align-items: center;
-    text-align: center;
+            .grid-container {
+                width: 100%;
+                display: grid;
+                grid-gap: 1rem;
 
-    margin-left: 3rem;
 
-    z-index: 7;
+                min-height: 10rem;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(1, 2fr);
 
-}
+                position: relative;
+                align-self: center;
+                margin: 0 auto;
+                align-items: center;
+                text-align: center;
 
-.fav-books {
-    text-align: center;
-    padding: 2rem;
-    background-color: #c4c4c4;
-    border-radius: 1rem;
-    
-}
+                margin-left: 3rem;
 
-@media (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-    }
-}
+                z-index: 7;
+
+            }
+
+            .fav-books {
+                text-align: center;
+                padding: 2rem;
+                background-color: #c4c4c4;
+                border-radius: 1rem;
+
+            }
+
+            @media (max-width: 768px) {
+                .grid-container {
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: auto;
+                }
+            }
 
 
             figure.card {
@@ -590,7 +590,7 @@
                 max-width: 150px;
                 min-height: 230px;
                 background-image: var(--image-src);
-                
+
                 background-position: 50% 50%;
                 background-size: 100%;
                 transition: background 400ms ease;
@@ -698,22 +698,22 @@
                 }
 
                 .grid-container {
-    display: grid;
-    grid-template-rows: repeat(2, 2fr);
-    grid-gap: 1rem;
-}
+                    display: grid;
+                    grid-template-rows: repeat(2, 2fr);
+                    grid-gap: 1rem;
+                }
 
-@media screen and (min-width: 768px) {
-    .grid-container {
-        grid-template-columns: repeat(2, 2fr);
-    }
-}
+                @media screen and (min-width: 768px) {
+                    .grid-container {
+                        grid-template-columns: repeat(2, 2fr);
+                    }
+                }
 
-@media screen and (min-width: 1200px) {
-    .grid-container {
-        grid-template-columns: repeat(4, 4fr);
-    }
-}
+                @media screen and (min-width: 1200px) {
+                    .grid-container {
+                        grid-template-columns: repeat(4, 4fr);
+                    }
+                }
 
             }
 
@@ -736,13 +736,12 @@
             .support a:hover {
                 transform: scale(1.1);
             }
-            
+
             .info span {
                 text-decoration: none;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 font-size: 2px;
             }
-
         </style>
 
         <div class="parent-element">
@@ -750,7 +749,7 @@
                 <h1>Favourite Movies</h1>
                 <br><br>
                 <div class="grid-container">
-    
+
                     <figure class="card card--1"
                         style="--image-src: url('https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg')">
                         <figcaption>
@@ -758,28 +757,31 @@
                                 <h5>Interstellar</h5>
                                 <span class="description-mv">by Christopher Nolan</span>
                             </span>
-        
+
                         </figcaption>
                     </figure>
-                    <figure class="card card--1" style="--image-src: url('https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_.jpg')">
+                    <figure class="card card--1"
+                        style="--image-src: url('https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_.jpg')">
                         <figcaption>
                             <span class="info">
                                 <h5>Inception</h5>
                                 <span>by Christopher Nolan</span>
                             </span>
-        
+
                         </figcaption>
                     </figure>
-                    <figure class="card card--1" style="--image-src: url('https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1555447414i/44767458.jpg')">
+                    <figure class="card card--1"
+                        style="--image-src: url('https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1555447414i/44767458.jpg')">
                         <figcaption>
                             <span class="info">
                                 <h5>Christopher Nolan</h5>
                                 <span>by Denis Villeneuve</span>
                             </span>
-    
+
                         </figcaption>
                     </figure>
-                    <figure class="card card--1" style="--image-src: url('https://m.media-amazon.com/images/M/MV5BZTNiNDA4NmMtNTExNi00YmViLWJkMDAtMDAxNmRjY2I2NDVjXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg')">
+                    <figure class="card card--1"
+                        style="--image-src: url('https://m.media-amazon.com/images/M/MV5BZTNiNDA4NmMtNTExNi00YmViLWJkMDAtMDAxNmRjY2I2NDVjXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg')">
                         <figcaption>
                             <span class="info">
                                 <h5>Transformers: Rise of the Beasts</h5>
@@ -789,7 +791,7 @@
                     </figure>
                 </div>
 
-    
+
             </div>
 
             <br><br>
@@ -798,7 +800,7 @@
                     <h1>Favourite Books</h1>
                     <br><br>
                     <div class="grid-container">
-        
+
                         <figure class="card card--1"
                             style="--image-src: url('https://jamesclear.com/wp-content/uploads/2016/08/The-Subtle-Art-of-Not-Giving-a-Fuck-by-Mark-Manson.png')">
                             <figcaption>
@@ -806,28 +808,31 @@
                                     <h3>The Hills</h3>
                                     <span>by David Marcu</span>
                                 </span>
-            
+
                             </figcaption>
                         </figure>
-                        <figure class="card card--1" style="--image-src: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP2ah4ZxPFz4m2NijjpVh_aedmZXyLPu3iAA&usqp=CAU')">
+                        <figure class="card card--1"
+                            style="--image-src: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP2ah4ZxPFz4m2NijjpVh_aedmZXyLPu3iAA&usqp=CAU')">
                             <figcaption>
                                 <span class="info">
                                     <h3>The Hills</h3>
                                     <span>by David Marcu</span>
                                 </span>
-            
+
                             </figcaption>
                         </figure>
-                        <figure class="card card--1" style="--image-src: url('https://store.goodreads.lk/wp-content/uploads/2022/11/9781408883792.jpg')">
+                        <figure class="card card--1"
+                            style="--image-src: url('https://store.goodreads.lk/wp-content/uploads/2022/11/9781408883792.jpg')">
                             <figcaption>
                                 <span class="info">
                                     <h3>The Hills</h3>
                                     <span>by David Marcu</span>
                                 </span>
-        
+
                             </figcaption>
                         </figure>
-                        <figure class="card card--1" style="--image-src: url('https://upload.wikimedia.org/wikipedia/en/thumb/d/d7/Collected_stories_clarke.jpg/220px-Collected_stories_clarke.jpg')">
+                        <figure class="card card--1"
+                            style="--image-src: url('https://upload.wikimedia.org/wikipedia/en/thumb/d/d7/Collected_stories_clarke.jpg/220px-Collected_stories_clarke.jpg')">
                             <figcaption>
                                 <span class="info">
                                     <h3>The Hills</h3>
@@ -836,84 +841,84 @@
                             </figcaption>
                         </figure>
                     </div>
-    
-        
+
+
                 </div>
 
 
                 <br>
-                
-            <div class="footer">
-                <link rel="stylesheet" href="css/social-icon.css">
 
-            <div class="icon-container">
-                <ul class="submenu">
-                    <li><a href="https://www.facebook.com/izlaki/"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://twitter.com/mrlakix"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://www.instagram.com/mr_laki__/"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="https://github.com/LakiDIV"><i class="fa fa-github"></i></a></li>
+                <div class="footer">
+                    <link rel="stylesheet" href="css/social-icon.css">
 
-                </ul>
+                    <div class="icon-container">
+                        <ul class="submenu">
+                            <li><a href="https://www.facebook.com/izlaki/"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://twitter.com/mrlakix"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com/mr_laki__/"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://github.com/LakiDIV"><i class="fa fa-github"></i></a></li>
 
-                <h4 class="copywrite-text">Artify Pixels ©️ 2023</h4>
+                        </ul>
+
+                        <h4 class="copywrite-text">Artify Pixels ©️ 2023</h4>
+                    </div>
+
+                    </ul>
+
+
+                </div>
+
             </div>
 
-            </ul>
 
-            
-        </div>
+            <script>
+                ; (function ($) {
+                    "use strict";
 
-        </div>     
+                    var $bars = $(".bar"),
+                        methods = {
+                            init: function () {
 
+                                // Bind events
+                                methods.bindEvents();
 
-        <script>
-            ; (function ($) {
-                "use strict";
+                            },
+                            bindEvents: function () {
 
-                var $bars = $(".bar"),
-                    methods = {
-                        init: function () {
+                                // Loop through each of the bars...
+                                $bars.each(function () {
 
-                            // Bind events
-                            methods.bindEvents();
+                                    var $bar = $(this),
+                                        $pct = $bar.find(".pct"),
+                                        data = $bar.data("bar");
 
-                        },
-                        bindEvents: function () {
+                                    setTimeout(function () {
 
-                            // Loop through each of the bars...
-                            $bars.each(function () {
+                                        $bar
+                                            .css("background-color", data.color)
+                                            .animate({
+                                                "width": $pct.html()
+                                            }, data.speed || 3000, function () {
 
-                                var $bar = $(this),
-                                    $pct = $bar.find(".pct"),
-                                    data = $bar.data("bar");
+                                                $pct.css({
+                                                    "color": data.color,
+                                                    "opacity": 1
+                                                });
 
-                                setTimeout(function () {
-
-                                    $bar
-                                        .css("background-color", data.color)
-                                        .animate({
-                                            "width": $pct.html()
-                                        }, data.speed || 3000, function () {
-
-                                            $pct.css({
-                                                "color": data.color,
-                                                "opacity": 1
                                             });
 
-                                        });
+                                    }, data.delay || 0);
 
-                                }, data.delay || 0);
+                                });
 
-                            });
+                            }
+                        };
 
-                        }
-                    };
+                    // Initialize on page load
+                    methods.init();
 
-                // Initialize on page load
-                methods.init();
-
-            })(jQuery);
-        </script>
+                })(jQuery);
+            </script>
 
 
 

@@ -20,36 +20,9 @@
 
 <body>
     
+   
+
     <div class="base-container">
-        <div class="container">
-            <div id="top">
-                <img class="img-container" src="images/profile.png" alt="Profile Picture" height="200px" style="
-                    margin: 1rem; 
-                    box-shadow: 8 6px 2px rgba(0, 2, 1, 0.918); 
-                    z-index: 10; 
-                    padding-right: 2rem;">
-                <div>
-    
-                    <h1 class="header">
-                        Lakshika Madhuranga
-                        <br><br>
-                    </h1>
-                    <hr>
-    
-                    <br>
-                    <p class="bio-one">
-                        <em>Founder and CEO of <strong>Artify Pixels.</strong></em>
-                    </p>
-    
-                    <p class="bio-two">
-                        I'm a digital artist and a software engineering student.
-                    </p>
-                </div>
-            </div>
-        </div>
-    
-    
-    
         <style>
      
             .navbar-container {
@@ -59,9 +32,13 @@
                 font-weight: 800;
                 transition: 1s;
                 padding: 1rem;
+                max-width: 62rem;
+                margin: 0 auto;
             }
     
             .navbar {
+                width: 100%;
+                max-width: 10rem;
                 background-color: #ebf0f5;
                 display: flex;
                 align-items: center;
@@ -72,6 +49,7 @@
             }
     
             .navbar-nav {
+                
                 margin: 0;
                 padding: 0;
                 list-style-type: none;
@@ -111,6 +89,9 @@
                         <a class="nav-link" href="/calendar">PROJECTS</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="/profile">RESUME</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="/about">BLOGS</a>
                     </li>
                     <li class="nav-item">
@@ -119,16 +100,41 @@
                 </ul>
             </nav>
         </div>
+
+
+        <div class="container">
+            <div id="top">
+                <img class="img-container" src="images/profile.png" alt="Profile Picture" height="200px" style="
+                    margin: 1rem; 
+                    box-shadow: 8 6px 2px rgba(0, 2, 1, 0.918); 
+                    z-index: 10; 
+                    padding-right: 2rem;">
+                <div>
+    
+                    <h1 class="header">
+                        Lakshika Madhuranga
+                        <br><br>
+                    </h1>
+                    <hr>
+    
+                    <br>
+                    <p class="bio-one">
+                        <em>Founder and CEO of <strong>Artify Pixels.</strong></em>
+                    </p>
+    
+                    <p class="bio-two">
+                        I'm a digital artist and a software engineering student.
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+    
+    
     
     
         <style>
-            * {
-                -webkit-box-sizing: border-box;
-                -moz-box-sizing: border-box;
-                box-sizing: border-box;
-                outline: none;
-            }
-    
+
     
             h1 {
                 text-align: center;
@@ -285,6 +291,7 @@
                         <h3>2020</h3>
                         <span>Diploma in Multimedia</span>
                         <p>Wijaya Graphics</p>
+                        <br> 
                         <span>Started Freelancing on Fiverr</span>
                         <p>With the understanding of Graphic Designing, I have started doing freelancing as a side hobby to gain
                             some experience in the industry</p>
@@ -310,8 +317,10 @@
                     <div class="marker"></div>
                     <div class="timeline-content">
                         <h3>2022</h3>
-                        <span>Diploma in Computer System Designing</span>
-                        <p>at NIBM</p>
+                        <span>Fundamentals of digital marketing</span>
+                        <p>from Google</p>
+                        <br>
+                        <img style="height: 10rem; border-radius: 0.6rem; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);" src="certificates/Fundamentals of digital marketing.png" alt="Certificate">
                     </div>
                 </div>
                 <div class="timeline-block timeline-block-left">
@@ -319,100 +328,32 @@
                     <div class="timeline-content">
                         <h3>Late 2022</h3>
                         <span>CS50P - Introduction to Python</span>
-                        <p>at Harverd University</p>
+                        <p>by Harverd University</p>
+                        <br>
+                        <img style="height: 10rem; border-radius: 0.6rem;box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);" src="certificates/CS50P.png" alt="Certificate">
+
+                    </div>
+                </div>
+                <div class="timeline-block timeline-block-right">
+                    <div class="marker"></div>
+                    <div class="timeline-content">
+                        <h3>Early 2023</h3>
+                        <span>Programming for Everybody (Getting Started with Python)</span>
+                        <p>by University of Michigan</p>
+                        <br>
+                        <img style="height: 10rem; border-radius: 0.6rem; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);" src="certificates/Programming for Everybody (Getting Started with Python).png" alt="Certificate">
+
                     </div>
                 </div>
             </div>
+            
         </section>
         
     
     <br><br><br>
-        <hr>
-    
-    
-        
-        <style>
-            .nev-container {
-                width: 100%;
-                height: 40rem;
-                background-color: #CCD1D9;
-                margin: 1rem;
-                padding: 0.5rem;
-                border-radius: 1rem;
-            }
-    
-            .content-section {
-                width: 98%;
-                height: 37rem;
-                background-color: #e0e0e0;
-                margin: 1rem;
-                padding: 2rem;
-                border-radius: 1rem;
-                color: #313131;
-            }
-        </style>
-    
-        <div class="container nev-container ">
-            <div class="content-section">
-                <p>Hello World</p>
-            </div>
-        </div>
-    
-    
-        <style>
-            .button-container {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-    
-            .button {
-                width: 12rem;
-                height: 3.4rem;
-                background-color: #e7db2d;
-                border-radius: 4rem;
-                transition: 1s;
-                color: #212121;
-                font-weight: 800;
-                box-shadow: 0 1px 1px rgba(255, 251, 251, 0.925);
-                margin-right: 1rem;
-            }
-    
-    
-            .button:hover {
-                width: 12rem;
-                height: 3.4rem;
-                background-color: #df9a4b;
-                border-radius: 4rem;
-            }
-    
-            .button p {
-                position: relative;
-                text-align: center;
-                padding-top: 1rem;
-            }
-        </style>
-    
-    
-    
-        <br>
-    
-        <br>
-        <div class="button-container">
-            <div class="button">
-                <p>HIRE</p>
-            </div>
-            <div class="button">
-                <p>CONTACT</p>
-            </div>
-        </div><br><br>
-        <hr>
-        <br><br>
-    
-        <link rel="stylesheet" href="css/skills.css">
-    
+
         <section class="skills-main-container">
-            <h1>Skills</h1>
+            <h1>My Skills</h1>
             <br>
             <ul id="skills">
                 <li>
@@ -507,6 +448,96 @@
         </div>
         </section>
     
+        
+        <style>
+            .nev-container {
+                width: 100%;
+                max-width: 60rem;
+                height: 40rem;
+                background: #CCD1D9;
+                margin: 1rem;
+                padding: 0.5rem;
+                border-radius: 1rem;
+            }
+    
+            .content-section {
+                width: 98%;
+                height: 37rem;
+                max-width: 56rem;
+                background-color: #e0e0e0;
+                margin: 1rem;
+                padding: 2rem;
+                border-radius: 1rem;
+                color: #313131;
+            }
+        </style>
+    
+        <section class="container">
+            <div class="nev-container">
+                <div class="content-section">
+                    <p>Hello World</p>
+                </div>
+            </div>
+            
+        </section>
+    
+    
+        <style>
+            .button-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+    
+            .button {
+                width: 12rem;
+                height: 3.4rem;
+                background-color: #e7db2d;
+                border-radius: 4rem;
+                transition: 1s;
+                color: #212121;
+                font-weight: 800;
+                box-shadow: 0 1px 1px rgba(255, 251, 251, 0.925);
+                margin-right: 1rem;
+            }
+    
+    
+            .button:hover {
+                width: 12rem;
+                height: 3.4rem;
+                background-color: #df9a4b;
+                border-radius: 4rem;
+            }
+    
+            .button p {
+                position: relative;
+                text-align: center;
+                padding-top: 1rem;
+            }
+        </style>
+    
+    
+    
+        <br>
+    
+
+
+        <br>
+        <div class="button-container">
+            <div class="button">
+                <p>HIRE ME</p>
+            </div>
+            <div class="button">
+                <p>CONTACT</p>
+            </div>
+        </div><br><br>
+        <hr>
+        <br><br>
+    
+        <link rel="stylesheet" href="css/skills.css">
+    
+        
+    
     
     
         <script>
@@ -560,19 +591,21 @@
     
     
     
-        <h3>Hobbies</h3>
-        <h3>Favourite Books</h3>
-        <div class="bookrack">
+
+
+        <div class="fav-books-container">
+            <h1>Favourite Books</h1>
+            <br><br>
             <img class="bookcover"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXiCLaXo-haziow4z37tTCzYgsOZ2Bc2kJfRoedHtDO5l93LMo"
-                alt="">
-            <img class="bookcover" src="https://store.goodreads.lk/wp-content/uploads/2021/10/9780062641540.jpg" alt="">
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXiCLaXo-haziow4z37tTCzYgsOZ2Bc2kJfRoedHtDO5l93LMo"
+            alt="">
+        <img class="bookcover" src="https://store.goodreads.lk/wp-content/uploads/2021/10/9780062641540.jpg" alt="">
         </div>
-    
     
         <div class="footer">
                 <link rel="stylesheet" href="css/social-icon.css">
-           
+
+                <br>
             <div class="icon-container">
                 <ul class="submenu">
                     <li><a href="https://www.facebook.com/izlaki/"><i class="fa fa-facebook"></i></a></li>

@@ -11,7 +11,9 @@ body {
 .base-container {
     background-color: #333333;
     border-radius: 1rem;
-    padding: 4rem;
+    padding: 1rem;
+    width: 64rem;
+    margin: 1rem auto;
 }
 
 .timeline-main-container {
@@ -20,6 +22,19 @@ body {
    padding: 2rem;
    border-radius: 1rem;
    max-width: 60rem;
+}
+
+
+.fav-books-container {
+    display: block;
+    background-color: #ccd1d9;
+    border-radius: 1rem;
+    padding: 4rem;
+    width: 100%;
+    max-width: 60rem;
+    height: 20rem;
+    margin: 2rem auto;
+    text-align: center;
 }
 
 
@@ -70,8 +85,8 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  max-width: 60rem;
   height: 260px;
-  margin: 1rem;
   color: #36383b;
 padding: 1rem;
 

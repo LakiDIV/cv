@@ -8,6 +8,32 @@ body {
     background-position: center;
 }
 
+.base-container {
+    background-color: #333333;
+    border-radius: 1rem;
+    padding: 4rem;
+}
+
+.timeline-main-container {
+    margin: 0 auto;
+   background-color: #d0d7da;
+   padding: 2rem;
+   border-radius: 1rem;
+   max-width: 60rem;
+}
+
+
+.skills-main-container {
+    margin: 0 auto;
+    background-color: #d0d7da;
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 60rem;
+    color: #424242;
+}
+
+
+
 
 .container {
 

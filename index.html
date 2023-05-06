@@ -20,579 +20,577 @@
 
 <body>
     
-
-    <div class="container">
-        <div id="top">
-            <img class="img-container" src="images/profile.png" alt="Profile Picture" height="200px" style="
-                margin: 1rem; 
-                box-shadow: 8 6px 2px rgba(0, 2, 1, 0.918); 
-                z-index: 10; 
-                padding-right: 2rem;">
-            <div>
-
-                <h1 class="header">
-                    Lakshika Madhuranga
-                    <br><br>
-                </h1>
-                <hr>
-
-                <br>
-                <p class="bio-one">
-                    <em>Founder and CEO of <strong>Artify Pixels.</strong></em>
-                </p>
-
-                <p class="bio-two">
-                    I'm a digital artist and a software engineering student.
-                </p>
-            </div>
-        </div>
-    </div>
-
-
-
-    <style>
- 
-        .navbar-container {
-            
-            display: flex;
-            justify-content: center;
-            font-weight: 800;
-            transition: 1s;
-            padding: 1rem;
-        }
-
-        .navbar {
-            background-color: #ebf0f5;
-            display: flex;
-            align-items: center;
-            padding: 1rem;
-            border-radius: 1rem;
-            max-width: 100rem;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .navbar-nav {
-            margin: 0;
-            padding: 0;
-            list-style-type: none;
-            display: flex;
-        }
-
-        .nav-item {
-            margin: 0;
-        }
-
-        .nav-link {
-            display: block;
-            padding: 0.8rem;
-            color: #363636;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .nav-link:hover {
-            color: #da6a03;
-
-        }
-
-        .nav-link:hover {
-            text-decoration: underline;
-        }
-    </style>
-
-
-    <div class="navbar-container">
-        <nav class="navbar" data-bs-theme="dark">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="/" deactvate>HOME</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/calendar">PROJECTS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/about">BLOGS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/profile">CONTACT</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-
-
-    <style>
-        * {
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-            outline: none;
-        }
-
-
-        h1 {
-            text-align: center;
-            font-weight: 300;
-            color: #777
-        }
-
-        h1 span {
-            font-weight: 600;
-        }
-
-        .timeline-main-container {
-            margin: 0 auto;
-           background-color: #d0d7da;
-           padding: 2rem;
-           border-radius: 1rem;
-           max-width: 60rem;
-        }
-
-        .timeline-container {
-            width: 80%;
-            padding: 50px 0;
-            margin: 50px auto;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .timeline-container:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 50%;
-            margin-left: -1px;
-            width: 2px;
-            height: 100%;
-            background: #CCD1D9;
-            z-index: 1
-        }
-
-        .timeline-block {
-            width: -webkit-calc(50% + 8px);
-            width: -moz-calc(50% + 8px);
-            width: calc(50% + 8px);
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: -moz-box;
-            display: flex;
-            -webkit-box-pack: justify;
-            -webkit-justify-content: space-between;
-            -moz-box-pack: justify;
-            justify-content: space-between;
-            clear: both;
-        }
-
-        .timeline-block-right {
-            float: right;
-        }
-
-        .timeline-block-left {
-            float: left;
-            direction: rtl
-        }
-
-        .marker {
-            width: 16px;
-            height: 16px;
-            border-radius: 50%;
-            border: 2px solid #e8eaee;
-            background: #2fa1ca;
-            margin-top: 10px;
-            z-index: 9999
-        }
-
-        .timeline-content {
-            width: 95%;
-            padding: 0 15px;
-            color: #363636
-        }
-
-        .timeline-content h3 {
-            margin-top: 5px;
-            margin-bottom: 5px;
-            font-size: 25px;
-            font-weight: 500
-        }
-
-        .timeline-content span {
-            font-size: 15px;
-            color: #a5a5a5;
-        }
-
-        .timeline-content p {
-            font-size: 14px;
-            line-height: 1.5em;
-            word-spacing: 1px;
-            color: #5c5c5c;
-        }
-
-
-        @media screen and (max-width: 768px) {
-            .timeline-container:before {
-                left: 8px;
-                width: 2px;
-            }
-
-            .timeline-block {
-                width: 100%;
-                margin-bottom: 30px;
-            }
-
-            .timeline-block-right {
-                float: none;
-            }
-
-            .timeline-block-left {
-                float: none;
-                direction: ltr;
-            }
-        }
-    </style>
-
-    <br>
-    <br><br>
-
-    <section class="timeline-main-container">
-        <br>
-        <h1>My <span>timeline</span></h1>
-
-        <div class="timeline-container">
+    <div class="base-container">
+        <div class="container">
+            <div id="top">
+                <img class="img-container" src="images/profile.png" alt="Profile Picture" height="200px" style="
+                    margin: 1rem; 
+                    box-shadow: 8 6px 2px rgba(0, 2, 1, 0.918); 
+                    z-index: 10; 
+                    padding-right: 2rem;">
+                <div>
     
-            <div class="timeline-block timeline-block-right">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                    <h3>👶🏽</h3>
-                    <span>2000 AD</span>
-                    <p>In the mystical lands of Sri Lanka, amidst the tapestry of vibrant culture, a radiant soul named
-                        <q>Lakshika Madhuranga</q> came into existence.
+                    <h1 class="header">
+                        Lakshika Madhuranga
+                        <br><br>
+                    </h1>
+                    <hr>
+    
+                    <br>
+                    <p class="bio-one">
+                        <em>Founder and CEO of <strong>Artify Pixels.</strong></em>
+                    </p>
+    
+                    <p class="bio-two">
+                        I'm a digital artist and a software engineering student.
                     </p>
                 </div>
             </div>
-    
-            <div class="timeline-block timeline-block-left">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                    <h3>2016</h3>
-                    <span>G.C.E O/L</span>
-                </div>
-            </div>
-    
-            <div class="timeline-block timeline-block-right">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                    <h3>2019</h3>
-                    <span>G.C.E A/L</span>
-                </div>
-            </div>
-    
-            <div class="timeline-block timeline-block-left">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                    <h3>2020</h3>
-                    <span>Diploma in Multimedia</span>
-                    <p>Wijaya Graphics</p>
-                    <span>Started Freelancing on Fiverr</span>
-                    <p>With the understanding of Graphic Designing, I have started doing freelancing as a side hobby to gain
-                        some experience in the industry</p>
-                </div>
-            </div>
-            <div class="timeline-block timeline-block-right">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                    <h3>2021</h3>
-                    <span>Diploma in Computer System Designing</span>
-                    <p>at NIBM</p>
-                </div>
-            </div>
-            <div class="timeline-block timeline-block-left">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                    <h3>2021 December</h3>
-                    <span>Graphic Artist</span>
-                    <p>Remotly with Just Natural by Rod - Australia</p>
-                </div>
-            </div>
-            <div class="timeline-block timeline-block-right">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                    <h3>2022</h3>
-                    <span>Diploma in Computer System Designing</span>
-                    <p>at NIBM</p>
-                </div>
-            </div>
-            <div class="timeline-block timeline-block-left">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                    <h3>Late 2022</h3>
-                    <span>CS50P - Introduction to Python</span>
-                    <p>at Harverd University</p>
-                </div>
-            </div>
         </div>
-    </section>
     
-
-<br><br><br>
-    <hr>
-
-
     
-    <style>
-        .nev-container {
-            width: 100%;
-            height: 40rem;
-            background-color: #CCD1D9;
-            margin: 1rem;
-            padding: 0.5rem;
-            border-radius: 1rem;
-        }
-
-        .content-section {
-            width: 98%;
-            height: 37rem;
-            background-color: #e0e0e0;
-            margin: 1rem;
-            padding: 2rem;
-            border-radius: 1rem;
-            color: #313131;
-        }
-    </style>
-
-    <div class="container nev-container ">
-        <div class="content-section">
-            <p>Hello World</p>
+    
+        <style>
+     
+            .navbar-container {
+                
+                display: flex;
+                justify-content: center;
+                font-weight: 800;
+                transition: 1s;
+                padding: 1rem;
+            }
+    
+            .navbar {
+                background-color: #ebf0f5;
+                display: flex;
+                align-items: center;
+                padding: 1rem;
+                border-radius: 1rem;
+                max-width: 100rem;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+    
+            .navbar-nav {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                display: flex;
+            }
+    
+            .nav-item {
+                margin: 0;
+            }
+    
+            .nav-link {
+                display: block;
+                padding: 0.8rem;
+                color: #363636;
+                text-decoration: none;
+                transition: color 0.3s;
+            }
+    
+            .nav-link:hover {
+                color: #da6a03;
+    
+            }
+    
+            .nav-link:hover {
+                text-decoration: underline;
+            }
+        </style>
+    
+    
+        <div class="navbar-container">
+            <nav class="navbar" data-bs-theme="dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/" deactvate>HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/calendar">PROJECTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">BLOGS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/profile">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-    </div>
-
-
-    <style>
-        .button-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .button {
-            width: 12rem;
-            height: 3.4rem;
-            background-color: #e7db2d;
-            border-radius: 4rem;
-            transition: 1s;
-            color: #212121;
-            font-weight: 800;
-            box-shadow: 0 1px 1px rgba(255, 251, 251, 0.925);
-            margin-right: 1rem;
-        }
-
-
-        .button:hover {
-            width: 12rem;
-            height: 3.4rem;
-            background-color: #df9a4b;
-            border-radius: 4rem;
-        }
-
-        .button p {
-            position: relative;
-            text-align: center;
-            padding-top: 1rem;
-        }
-    </style>
-
-
-
-    <br>
-
-    <br>
-    <div class="button-container">
-        <div class="button">
-            <p>HIRE</p>
-        </div>
-        <div class="button">
-            <p>CONTACT</p>
-        </div>
-    </div><br><br>
-    <hr>
-    <br><br>
-
-    <link rel="stylesheet" href="css/skills.css">
-
-    <div>
-        <h1>Skills</h1>
-        <ul id="skills">
-            <li>
-                Photoshop
-                <div class="bar-container">
-                    <span class="bar" data-bar='{ "color": "#31a8ff" }'>
-                        <span class="pct">92%</span>
-                    </span>
-                </div>
-            </li>
-            <li>
-                Illustrator
-                <div class="bar-container">
-                    <span class="bar" data-bar='{ "color": "#ff9a00" }'>
-                        <span class="pct">62%</span>
-                    </span>
-                </div>
-            </li>
-            <li>
-                HTML
-                <div class="bar-container">
-                    <span class="bar" data-bar='{ "color": "#19f" }'>
-                        <span class="pct">82%</span>
-                    </span>
-                </div>
-            </li>
-            <li>
-                EJS
-                <div class="bar-container">
-                    <span class="bar" data-bar='{ "color": "#19f", "delay": 600 }'>
-                        <span class="pct">62%</span>
-                    </span>
-                </div>
-            </li>
-            <li>
-                JavaScript
-                <div class="bar-container">
-                    <span class="bar" data-bar='{ "color": "#19f", "delay": 700 }'>
-                        <span class="pct">62%</span>
-                    </span>
-                </div>
-            </li>
-            <li>
-                NodeJS
-                <div class="bar-container">
-                    <span class="bar" data-bar='{ "color": "#F1F2F6", "delay": 800 }'>
-                        <span class="pct">72%</span>
-                    </span>
-                </div>
-            </li>
-            <li>
-                CSS
-                <div class="bar-container">
-                    <span class="bar" data-bar='{ "color": "#27ae60", "delay": 900 }'>
-                        <span class="pct">94%</span>
-                    </span>
-                </div>
-            </li>
-            <li>
-                PHP
-                <div class="bar-container">
-                    <span class="bar" data-bar='{ "color": "#9b59b6", "delay": 1200 }'>
-                        <span class="pct">10%</span>
-                    </span>
-                </div>
-            </li>
-            <li>
-                SQL
-                <div class="bar-container">
-                    <span class="bar" data-bar='{ "color": "#ae8a33", "delay": 1800 }'>
-                        <span class="pct">30%</span>
-                    </span>
-                </div>
-            </li>
-            <li>
-                Python
-                <div class="bar-container">
-                    <span class="bar" data-bar='{ "color": "#ae8a33", "delay": 1800 }'>
-                        <span class="pct">52%</span>
-                    </span>
-                </div>
-            </li>
-            <li>
-                C
-                <div class="bar-container">
-                    <span class="bar" data-bar='{ "color": "#31a8ff", "delay": 1800 }'>
-                        <span class="pct">12%</span>
-                    </span>
-                </div>
-            </li>
-        </ul>
-    </div>
-
-
-
-
-    <script>
-        ; (function ($) {
-            "use strict";
-
-            var $bars = $(".bar"),
-                methods = {
-                    init: function () {
-
-                        // Bind events
-                        methods.bindEvents();
-
-                    },
-                    bindEvents: function () {
-
-                        // Loop through each of the bars...
-                        $bars.each(function () {
-
-                            var $bar = $(this),
-                                $pct = $bar.find(".pct"),
-                                data = $bar.data("bar");
-
-                            setTimeout(function () {
-
-                                $bar
-                                    .css("background-color", data.color)
-                                    .animate({
-                                        "width": $pct.html()
-                                    }, data.speed || 3000, function () {
-
-                                        $pct.css({
-                                            "color": data.color,
-                                            "opacity": 1
-                                        });
-
-                                    });
-
-                            }, data.delay || 0);
-
-                        });
-
-                    }
-                };
-
-            // Initialize on page load
-            methods.init();
-
-        })(jQuery);
-    </script>
-
-
-
-    <h3>Hobbies</h3>
-    <h3>Favourite Books</h3>
-    <div class="bookrack">
-        <img class="bookcover"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXiCLaXo-haziow4z37tTCzYgsOZ2Bc2kJfRoedHtDO5l93LMo"
-            alt="">
-        <img class="bookcover" src="https://store.goodreads.lk/wp-content/uploads/2021/10/9780062641540.jpg" alt="">
-    </div>
-
-
-    <div class="footer">
-            <link rel="stylesheet" href="css/social-icon.css">
-       
-        <div class="icon-container">
-            <ul class="submenu">
-                <li><a href="https://www.facebook.com/izlaki/"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="https://twitter.com/mrlakix"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="https://www.instagram.com/mr_laki__/"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="https://github.com/LakiDIV"><i class="fa fa-github"></i></a></li>
-            
-            </ul>
-
-            <h5 class="copywrite-text">Artify Pixels ©️ 2023</h5>
-        </div>
+    
+    
+        <style>
+            * {
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                outline: none;
+            }
+    
+    
+            h1 {
+                text-align: center;
+                font-weight: 300;
+                color: #777
+            }
+    
+            h1 span {
+                font-weight: 600;
+            }
+    
+    
+            .timeline-container {
+                width: 80%;
+                padding: 50px 0;
+                margin: 50px auto;
+                position: relative;
+                overflow: hidden;
+            }
+    
+            .timeline-container:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 50%;
+                margin-left: -1px;
+                width: 2px;
+                height: 100%;
+                background: #CCD1D9;
+                z-index: 1
+            }
+    
+            .timeline-block {
+                width: -webkit-calc(50% + 8px);
+                width: -moz-calc(50% + 8px);
+                width: calc(50% + 8px);
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -moz-box;
+                display: flex;
+                -webkit-box-pack: justify;
+                -webkit-justify-content: space-between;
+                -moz-box-pack: justify;
+                justify-content: space-between;
+                clear: both;
+            }
+    
+            .timeline-block-right {
+                float: right;
+            }
+    
+            .timeline-block-left {
+                float: left;
+                direction: rtl
+            }
+    
+            .marker {
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                border: 2px solid #e8eaee;
+                background: #2fa1ca;
+                margin-top: 10px;
+                z-index: 9999
+            }
+    
+            .timeline-content {
+                width: 95%;
+                padding: 0 15px;
+                color: #363636
+            }
+    
+            .timeline-content h3 {
+                margin-top: 5px;
+                margin-bottom: 5px;
+                font-size: 25px;
+                font-weight: 500
+            }
+    
+            .timeline-content span {
+                font-size: 15px;
+                color: #a5a5a5;
+            }
+    
+            .timeline-content p {
+                font-size: 14px;
+                line-height: 1.5em;
+                word-spacing: 1px;
+                color: #5c5c5c;
+            }
+    
+    
+            @media screen and (max-width: 768px) {
+                .timeline-container:before {
+                    left: 8px;
+                    width: 2px;
+                }
+    
+                .timeline-block {
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+    
+                .timeline-block-right {
+                    float: none;
+                }
+    
+                .timeline-block-left {
+                    float: none;
+                    direction: ltr;
+                }
+            }
+        </style>
+    
+        <br>
+        <br><br>
+    
+        <section class="timeline-main-container">
+            <br>
+            <h1>My <span>timeline</span></h1>
+    
+            <div class="timeline-container">
         
+                <div class="timeline-block timeline-block-right">
+                    <div class="marker"></div>
+                    <div class="timeline-content">
+                        <h3>👶🏽</h3>
+                        <span>2000 AD</span>
+                        <p>In the mystical lands of Sri Lanka, amidst the tapestry of vibrant culture, a radiant soul named
+                            <q>Lakshika Madhuranga</q> came into existence.
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="timeline-block timeline-block-left">
+                    <div class="marker"></div>
+                    <div class="timeline-content">
+                        <h3>2016</h3>
+                        <span>G.C.E O/L</span>
+                    </div>
+                </div>
+        
+                <div class="timeline-block timeline-block-right">
+                    <div class="marker"></div>
+                    <div class="timeline-content">
+                        <h3>2019</h3>
+                        <span>G.C.E A/L</span>
+                    </div>
+                </div>
+        
+                <div class="timeline-block timeline-block-left">
+                    <div class="marker"></div>
+                    <div class="timeline-content">
+                        <h3>2020</h3>
+                        <span>Diploma in Multimedia</span>
+                        <p>Wijaya Graphics</p>
+                        <span>Started Freelancing on Fiverr</span>
+                        <p>With the understanding of Graphic Designing, I have started doing freelancing as a side hobby to gain
+                            some experience in the industry</p>
+                    </div>
+                </div>
+                <div class="timeline-block timeline-block-right">
+                    <div class="marker"></div>
+                    <div class="timeline-content">
+                        <h3>2021</h3>
+                        <span>Diploma in Computer System Designing</span>
+                        <p>at NIBM</p>
+                    </div>
+                </div>
+                <div class="timeline-block timeline-block-left">
+                    <div class="marker"></div>
+                    <div class="timeline-content">
+                        <h3>2021 December</h3>
+                        <span>Graphic Artist</span>
+                        <p>Remotly with Just Natural by Rod - Australia</p>
+                    </div>
+                </div>
+                <div class="timeline-block timeline-block-right">
+                    <div class="marker"></div>
+                    <div class="timeline-content">
+                        <h3>2022</h3>
+                        <span>Diploma in Computer System Designing</span>
+                        <p>at NIBM</p>
+                    </div>
+                </div>
+                <div class="timeline-block timeline-block-left">
+                    <div class="marker"></div>
+                    <div class="timeline-content">
+                        <h3>Late 2022</h3>
+                        <span>CS50P - Introduction to Python</span>
+                        <p>at Harverd University</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    
+    <br><br><br>
+        <hr>
+    
+    
+        
+        <style>
+            .nev-container {
+                width: 100%;
+                height: 40rem;
+                background-color: #CCD1D9;
+                margin: 1rem;
+                padding: 0.5rem;
+                border-radius: 1rem;
+            }
+    
+            .content-section {
+                width: 98%;
+                height: 37rem;
+                background-color: #e0e0e0;
+                margin: 1rem;
+                padding: 2rem;
+                border-radius: 1rem;
+                color: #313131;
+            }
+        </style>
+    
+        <div class="container nev-container ">
+            <div class="content-section">
+                <p>Hello World</p>
+            </div>
+        </div>
+    
+    
+        <style>
+            .button-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+    
+            .button {
+                width: 12rem;
+                height: 3.4rem;
+                background-color: #e7db2d;
+                border-radius: 4rem;
+                transition: 1s;
+                color: #212121;
+                font-weight: 800;
+                box-shadow: 0 1px 1px rgba(255, 251, 251, 0.925);
+                margin-right: 1rem;
+            }
+    
+    
+            .button:hover {
+                width: 12rem;
+                height: 3.4rem;
+                background-color: #df9a4b;
+                border-radius: 4rem;
+            }
+    
+            .button p {
+                position: relative;
+                text-align: center;
+                padding-top: 1rem;
+            }
+        </style>
+    
+    
+    
+        <br>
+    
+        <br>
+        <div class="button-container">
+            <div class="button">
+                <p>HIRE</p>
+            </div>
+            <div class="button">
+                <p>CONTACT</p>
+            </div>
+        </div><br><br>
+        <hr>
+        <br><br>
+    
+        <link rel="stylesheet" href="css/skills.css">
+    
+        <section class="skills-main-container">
+            <h1>Skills</h1>
+            <br>
+            <ul id="skills">
+                <li>
+                    Photoshop
+                    <div class="bar-container">
+                        <span class="bar" data-bar='{ "color": "#31a8ff" }'>
+                            <span class="pct">92%</span>
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    Illustrator
+                    <div class="bar-container">
+                        <span class="bar" data-bar='{ "color": "#ff9a00" }'>
+                            <span class="pct">62%</span>
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    HTML
+                    <div class="bar-container">
+                        <span class="bar" data-bar='{ "color": "#19f" }'>
+                            <span class="pct">82%</span>
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    EJS
+                    <div class="bar-container">
+                        <span class="bar" data-bar='{ "color": "#19f", "delay": 600 }'>
+                            <span class="pct">62%</span>
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    JavaScript
+                    <div class="bar-container">
+                        <span class="bar" data-bar='{ "color": "#19f", "delay": 700 }'>
+                            <span class="pct">62%</span>
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    NodeJS
+                    <div class="bar-container">
+                        <span class="bar" data-bar='{ "color": "#F1F2F6", "delay": 800 }'>
+                            <span class="pct">72%</span>
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    CSS
+                    <div class="bar-container">
+                        <span class="bar" data-bar='{ "color": "#27ae60", "delay": 900 }'>
+                            <span class="pct">94%</span>
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    PHP
+                    <div class="bar-container">
+                        <span class="bar" data-bar='{ "color": "#9b59b6", "delay": 1200 }'>
+                            <span class="pct">10%</span>
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    SQL
+                    <div class="bar-container">
+                        <span class="bar" data-bar='{ "color": "#ae8a33", "delay": 1800 }'>
+                            <span class="pct">30%</span>
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    Python
+                    <div class="bar-container">
+                        <span class="bar" data-bar='{ "color": "#ae8a33", "delay": 1800 }'>
+                            <span class="pct">52%</span>
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    C
+                    <div class="bar-container">
+                        <span class="bar" data-bar='{ "color": "#31a8ff", "delay": 1800 }'>
+                            <span class="pct">12%</span>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        </section>
+    
+    
+    
+        <script>
+            ; (function ($) {
+                "use strict";
+    
+                var $bars = $(".bar"),
+                    methods = {
+                        init: function () {
+    
+                            // Bind events
+                            methods.bindEvents();
+    
+                        },
+                        bindEvents: function () {
+    
+                            // Loop through each of the bars...
+                            $bars.each(function () {
+    
+                                var $bar = $(this),
+                                    $pct = $bar.find(".pct"),
+                                    data = $bar.data("bar");
+    
+                                setTimeout(function () {
+    
+                                    $bar
+                                        .css("background-color", data.color)
+                                        .animate({
+                                            "width": $pct.html()
+                                        }, data.speed || 3000, function () {
+    
+                                            $pct.css({
+                                                "color": data.color,
+                                                "opacity": 1
+                                            });
+    
+                                        });
+    
+                                }, data.delay || 0);
+    
+                            });
+    
+                        }
+                    };
+    
+                // Initialize on page load
+                methods.init();
+    
+            })(jQuery);
+        </script>
+    
+    
+    
+        <h3>Hobbies</h3>
+        <h3>Favourite Books</h3>
+        <div class="bookrack">
+            <img class="bookcover"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXiCLaXo-haziow4z37tTCzYgsOZ2Bc2kJfRoedHtDO5l93LMo"
+                alt="">
+            <img class="bookcover" src="https://store.goodreads.lk/wp-content/uploads/2021/10/9780062641540.jpg" alt="">
+        </div>
+    
+    
+        <div class="footer">
+                <link rel="stylesheet" href="css/social-icon.css">
+           
+            <div class="icon-container">
+                <ul class="submenu">
+                    <li><a href="https://www.facebook.com/izlaki/"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/mrlakix"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/mr_laki__/"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://github.com/LakiDIV"><i class="fa fa-github"></i></a></li>
+                
+                </ul>
+    
+                <h5 class="copywrite-text">Artify Pixels ©️ 2023</h5>
+            </div>
+            
+        </div>
+    
     </div>
 
+
+    
 
 
 </body>

@@ -25,9 +25,10 @@
 }
 
 ul.submenu {
-    width: 20rem;
+    width: 22rem;
+    padding-right: 1rem;
     align-items: center;
-    margin: 4rem auto;
+    margin: 6rem auto;
     background-color: #212121;
     border-radius: 5px;
     display: inline-block;
@@ -75,7 +76,7 @@ ul.submenu li a i.fa::after {
     border-radius: 200px;
     opacity: 0;
     z-index: -1;
-    transition: all ease 0.5s;
+    transition: all ease 0.2s;
     
 }
 
@@ -102,7 +103,7 @@ ul.submenu li a:hover i.fa-twitter::after {
 ul.submenu li a:hover i.fa-github::after {
     height: 100%;
     width: 100%;
-    background-color: #5a5555;
+    background-color: #443870;
     border-radius: 0px;
     opacity: 1;
 }

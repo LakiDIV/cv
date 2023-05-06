@@ -14,7 +14,7 @@ body {
   background-color: #222;
   font-size: 14px;
   color: #ccc;
-  width: 90vw;
+  width: 100vw;
   margin: 2rem auto;
 }
 
@@ -79,11 +79,11 @@ body {
                         
 .icon-container {
     position:absolute;
-    margin: 12rem auto;
+    margin: 6rem auto;
     display: block;
     align-self: center;
 
-    top: 20%;
+    top: 23%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 5;

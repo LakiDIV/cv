@@ -18,6 +18,15 @@ body {
   margin: 2rem auto;
 }
 
+h1 {
+    text-align: center;
+    font-weight: 300;
+    color: #777
+}
+
+h1 span {
+    font-weight: 600;
+}
 
 .base-container {
     background-color: #333333;

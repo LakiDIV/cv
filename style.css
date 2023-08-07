@@ -46,15 +46,23 @@ a {
 
 a:hover {
     color: #383838;
+    font-weight: 600;
 }
 
 .content {
     max-width: 800px;
     margin: auto;
+    
+}
+
+.cv {
+    border: 1px solid rgb(187, 187, 187);
+    padding: 2rem;
 }
 
 .sub-details {
-    transform: scale(0.9);
+    margin-left: 1rem;
+    font-size: 14px;
 }
 
 .centered-smaller {
@@ -72,6 +80,10 @@ a:hover {
 
     .content {
         max-width: 800px;
-        margin: auto;
+        
+    }
+
+    .cv {
+        padding: 1rem;
     }
 }

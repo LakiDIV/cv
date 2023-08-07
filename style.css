@@ -2,13 +2,15 @@ body {
     background-color: rgb(24, 24, 24);
 }
 
+
+
 section {
     background-color: rgb(238, 241, 243);
     padding: 1rem;
     font-family: 'Poppins', sans-serif;
     color: #383838;
-
 }
+
 
 h1 {
     letter-spacing: 4px;
@@ -21,12 +23,13 @@ h1 {
 h2 {
     text-transform: uppercase;
     letter-spacing: 3px;
+    font-size: 1.2rem;
 }
 
 h6 {
     margin: 0.5rem;
     letter-spacing: 3px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 300;
     text-align: center;
     text-transform: uppercase;
@@ -40,6 +43,7 @@ a {
     text-decoration: none;
     color: #5b5b5b;
 }
+
 a:hover {
     color: #383838;
 }
@@ -60,3 +64,14 @@ a:hover {
     line-height: 1; /* Reset the line-height to avoid extra spacing */
   }
   
+
+  @media only screen and (max-width: 800px) {
+    section {
+        font-size: 14px; /* Adjust the font size as needed */
+    }
+
+    .content {
+        max-width: 800px;
+        margin: auto;
+    }
+}

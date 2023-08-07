@@ -44,3 +44,19 @@ a:hover {
     color: #383838;
 }
 
+.content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.sub-details {
+    transform: scale(0.9);
+}
+
+.centered-smaller {
+    font-size: 0.7em; /* Adjust the font size as needed */
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1; /* Reset the line-height to avoid extra spacing */
+  }
+  

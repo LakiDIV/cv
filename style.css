@@ -107,3 +107,8 @@ img {
         padding: 1rem;
     }
 }
+
+.secret-text {
+    color: rgb(24, 24, 24);
+}
+    
